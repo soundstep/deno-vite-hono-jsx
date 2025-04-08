@@ -1,0 +1,28 @@
+{
+    "fmt": {
+        "singleQuote": true,
+        "indentWidth": 4,
+        "lineWidth": 140
+    },
+    "lint": {
+        "exclude": [
+            "no-explicit-any"
+        ]
+    },
+    "compilerOptions": {
+        "strict": true,
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "deno.ns"
+        ],
+        "types": [
+            "vite/client"
+        ],
+        "jsx": "react-jsx",
+        "jsxImportSource": "hono/jsx"
+    },
+    "imports": {
+        "@std/http": "jsr:@std/http@^1.0.14"
+    }
+}

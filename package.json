@@ -1,0 +1,20 @@
+{
+    "name": "hono-vite-jsx",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build --mode client",
+        "start": "deno run --allow-env --allow-net --allow-read server/server.prod.ts"
+    },
+    "dependencies": {
+        "@hono/node-server": "^1.12.2",
+        "hono": "^4.5.10"
+    },
+    "devDependencies": {
+        "@deno/vite-plugin": "^1.0.4",
+        "@hono/vite-build": "^1.1.0",
+        "@hono/vite-dev-server": "^0.19.0",
+        "@types/node": "^22.14.0",
+        "vite": "^6.2.5"
+    }
+}
