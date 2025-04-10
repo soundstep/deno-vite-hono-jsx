@@ -4,7 +4,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build --mode client",
-        "start": "deno run --allow-env --allow-net --allow-read server/server.prod.ts"
+        "start": "deno run --allow-env --allow-net --allow-read server/server.ts"
     },
     "dependencies": {
         "@hono/node-server": "^1.12.2",

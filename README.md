@@ -1,6 +1,6 @@
 # deno-hono-vite-jsx
 
-I started from this repo: <https://github.com/MathurAditya724/deno-vite-hono-jsx>
+I started from this one: <https://github.com/MathurAditya724/honojs-examples/tree/main/deno>
 
 ## Requirements
 
@@ -10,18 +10,18 @@ I started from this repo: <https://github.com/MathurAditya724/deno-vite-hono-jsx
 
 ## Install
 
-We use [pnpm](https://pnpm.io/), and for your sake, you should probably do that too.
-
 ```bash
-pnpm install
+deno install
 ```
+
+NPM or PNPM can also be used.
 
 ## Build the client
 
 Building
 
 ```bash
-pnpm build
+deno task build
 ```
 
 ## Dev server
@@ -29,7 +29,7 @@ pnpm build
 Run the `vite` dev server
 
 ```bash
-pnpm dev
+deno task dev
 ```
 
 ## Prod server
@@ -37,5 +37,5 @@ pnpm dev
 Run the `deno` prod server
 
 ```bash
-deno run -A server/server.prod.ts
+deno task start
 ```
