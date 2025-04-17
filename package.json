@@ -2,7 +2,8 @@
     "name": "hono-vite-jsx",
     "type": "module",
     "scripts": {
-        "dev": "vite",
+        "dev": "deno run -A npm:vite",
+        "dev:node": "vite",
         "build": "vite build --mode client",
         "start": "deno run --allow-env --allow-net --allow-read server/server.ts"
     },

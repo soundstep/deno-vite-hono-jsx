@@ -26,7 +26,7 @@ deno task build
 
 ## Dev server
 
-Run the `vite` dev server
+Run the `vite` dev server with Deno
 
 ```bash
 deno task dev
