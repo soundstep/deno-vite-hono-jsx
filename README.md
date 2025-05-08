@@ -47,6 +47,8 @@ Node `http2.createSecureServer` is currently not supported in Deno:
 
 https://github.com/denoland/deno/blame/5b5e93ff42f0a18a768041df2a3d2262c9d31c0b/ext/node/polyfills/http2.ts#L1753
 
+Reported there: https://github.com/denoland/deno/issues/29206
+
 ```sh
 ❯ deno task dev
 
