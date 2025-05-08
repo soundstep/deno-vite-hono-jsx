@@ -2,6 +2,9 @@ import devServer from '@hono/vite-dev-server';
 import { defineConfig } from 'vite';
 import deno from '@deno/vite-plugin';
 import build from '@hono/vite-build/deno';
+import { getCertificates } from './server/certificates.ts';
+
+const { cert, key } = await getCertificates();
 
 export default defineConfig(({ mode }) => {
     if (mode === 'client') {
@@ -21,6 +24,10 @@ export default defineConfig(({ mode }) => {
     }
 
     return {
+        server: {
+            host: '127.0.0.1',
+            https: { key, cert },
+        },
         plugins: [
             deno(),
             build({
